@@ -1,0 +1,92 @@
+/* Reset & Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #eef2f3, #d8e2f0);
+    color: #2c3e50;
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  /* Heading */
+  h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #4b3f72;
+    text-align: center;
+  }
+  
+  /* File Input */
+  input[type="file"] {
+    display: inline-block;
+    margin-bottom: 25px;
+    padding: 12px 20px;
+    font-size: 1em;
+    border: 2px dashed #a29bfe;
+    background-color: #fefefe;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  input[type="file"]:hover {
+    border-color: #6c5ce7;
+    background-color: #f0f4ff;
+  }
+  
+  /* File Info Card */
+  .file-info {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(108, 92, 231, 0.15);
+    margin-bottom: 20px;
+    border-left: 6px solid #6c5ce7;
+  }
+  
+  .file-info p {
+    margin: 8px 0;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  /* Preview Area */
+  .preview {
+    text-align: center;
+  }
+  
+  img,
+  video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  img:hover,
+  video:hover {
+    transform: scale(1.03);
+  }
+  
+  /* Add subtle animation */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .file-info,
+  .preview {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
